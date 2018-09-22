@@ -1,0 +1,188 @@
+
+html, body
+{
+	padding: 0;
+	margin: 0;
+	background: url("1p.jpg") left top ;
+	/*background-size: 100% 1000px;*/
+}
+
+#container
+{
+	width: 1024px;
+	/*height: 800px;*/
+	margin: auto;	
+	border-left: 2px solid #80ffaa;
+	border-right: 2px solid #80ffaa;	
+	background: white;
+	overflow: auto;	
+}
+#spacer
+{
+	height: 20px;
+	width: 1024px;
+	margin: auto;	
+	border-left: 2px solid #80ffaa;
+	border-right: 2px solid #80ffaa;
+}
+#menu
+{
+	float:left;
+	min-height: 400px;
+	width: 244px;	
+	margin: 0 5px 0 0;	
+	border-right: 2px solid #80ffaa;
+	
+}
+#menu ul
+{	
+	margin: auto;
+	padding: 20px 0 0 0;	
+	text-align: center;		
+	/*border-bottom: 1px solid #80ffaa;*/
+}
+
+#menu li
+{
+	list-style-type:none;	
+}
+
+
+
+#menu a
+{
+	display: block;
+	margin: 2px 0 2px 0;	
+	font-weight:bold;
+	color:#00cc44;	
+	text-decoration:none;
+}
+#menu a:hover
+{
+	color:white;
+	background:#00cc44;
+}
+
+#menu a:active 
+{
+	color:white;
+	background:green;
+}
+/*.current
+{
+	color:black;
+	background:#00cc44;
+}*/
+ 
+.box
+{
+	float:left;
+	width:768px;
+	margin-right:5px;
+}
+#colont
+{
+	height: 16px;
+	padding: 5px;
+	font-size: 10px;
+	text-align: right;
+	background: #80ffaa;
+}
+#header
+{	
+	margin:auto;
+	margin-bottom: 5px;
+	background:#66cc00;
+	text-align: center;
+	font-size: 2.5em;		
+}
+#content
+{	
+	padding:5px;
+	border-left: 2px solid #80ffaa;
+	border-right: 2px solid #80ffaa;
+	font-family: "Times New Roman", Times, serif;
+	/*height: 80%;*/
+}
+
+#intro
+{
+	text-align:center;
+	font-size:20px;
+	font-weight: bold;	
+}
+#content #text
+{
+	padding:3px;	
+}
+
+#content ul
+{
+	padding-left: 20px;
+}
+#content #ex
+{
+	height:200px;
+	margin:auto; 
+	list-style-type:none;
+}
+#content img
+{
+	float: left;
+	height: 200px;
+	margin-right: 10px;
+}
+#content img+p
+{
+	/*float:right;*/
+	font-size: 18px;
+	padding:3px
+}
+
+ .author
+{
+	margin:10px 0 10px 100px;
+	font-style:italic;
+	font-size: 10px;
+}
+
+#add
+{
+	margin: 5px 0 2px 0;
+	padding:5px;
+	border-bottom: 1px solid #80ffaa;
+	border-top: 1px solid #80ffaa;	
+}
+#add button
+{
+	height: 30px;
+	width: 80px;
+	color: white;
+	background: green;
+	border-radius: 4px;
+	border:none;
+	text-align: center;
+    text-decoration: none;
+	position: relative;
+    display: inline-block;	
+}
+#add a
+{
+	float:right;
+}
+
+.mes
+{
+	position: absolute;
+	margin-top: 7px;
+	display:none;
+	width: 100px;	
+	background:white;
+	color:black;
+	border: 1px solid #80ffaa;
+	
+}
+button:active .mes
+{
+	display:block;
+}
