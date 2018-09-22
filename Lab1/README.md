@@ -6,4 +6,4 @@
 1. Вивчити особливості розмітки Web-документів з використання мови XHTML та CSS
 2. Розробити макет та виконати кодування сторінок статичного Web-сайту відповідно до варіанта
 3. Виконати інформаційне наповнення сторінок Web-сайту
-![Example](shumnyj.github.com/shumnyj/WebLabWorks/Lab1/213.JPG)
+![Example](github.com/shumnyj/WebLabWorks/Lab1/213.JPG)
