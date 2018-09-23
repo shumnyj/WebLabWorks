@@ -1,6 +1,8 @@
 
 html, body
 {
+	height: 100%;
+	min-height: 100%;
 	padding: 0;
 	margin: 0;
 	background: url("1p.jpg") left top ;
@@ -10,7 +12,8 @@ html, body
 #container
 {
 	width: 1024px;
-	/*height: 800px;*/
+	/*min-height: 40%;
+	max-height: 95%;*/
 	margin: auto;	
 	border-left: 2px solid #80ffaa;
 	border-right: 2px solid #80ffaa;	
@@ -28,7 +31,7 @@ html, body
 #menu
 {
 	float:left;
-	min-height: 400px;
+	height: 400px;
 	width: 244px;	
 	margin: 0 5px 0 0;	
 	border-right: 2px solid #80ffaa;
