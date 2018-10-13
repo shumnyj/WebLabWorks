@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.1//EN" "http://wwww.w3.org/TR/xhtml11.dtd">
+<html xmlns="http://wwww.w3.org/1999/xhtml">
+	<head>
+		<title>Hint test</title>
+		<link type="text/css" media="all" rel="stylesheet" href="styles.css" />
+		<script>
+		var hintModule = ( function()
+		{
+			let lib;
+		
+			function hintPush()
+			{
+				lib = document.getElementById('lib')
+				let f = document.getElementById("field1")
+				
+				if(f.value!="")
+					{
+						/*lib.style.display = "block"*/
+						let p = document.createElement('li')
+						p.innerHTML = f.value
+						lib.appendChild(p)
+					}			
+			}
+			
+			function hintPop()
+			{
+				let lst = document.getElementById('hint')
+				let h = document.getElementById('help')
+				let f = document.getElementById("field2")
+				lib = document.getElementById('lib')
+				
+				h.innerHTML=f.value
+				while(lst.hasChildNodes())
+				{
+					lst.removeChild(lst.firstChild)
+				}	
+				if(f.value!="")
+				{
+					let a1 = lib.children
+					let i					
+					for(i=0; i<lib.childElementCount; i++)
+					{
+						if (a1[i].innerHTML.indexOf(f.value)==0)
+						{
+							let p = document.createElement('li')
+							p.innerHTML = a1[i].innerHTML
+							lst.appendChild(p)
+						}
+					}
+				}
+				else
+				{}
+			}
+			return {
+			hintPush: hintPush,
+			hintPop: hintPop
+			};
+		}())	
+		</script>
+	</head>
+	
+	<body>
+		<div id="container">
+			
+				<!--<input id = "field" type="text" onchange="hintPop()"/>
+				<ul id ="hint" >
+				</ul>-->
+				<div class="box">
+					<h3> List input</h3>
+					
+						<input id = "field1" type="text" onchange='hintModule.hintPush()'/>
+					
+					<ul id="lib">
+					</ul>
+				</div>
+				<div class="box">
+					<h3> Input with hint</h3>
+					<input id = "field2" type="text" onchange='hintModule.hintPop()'/>						
+					<div id = "help"></div>
+					<ul id ="hint" >
+					</ul>
+				</div>
+			
+		</div>
+	</body>
+</html> 
