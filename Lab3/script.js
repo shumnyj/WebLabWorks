@@ -69,9 +69,10 @@ var hintModule = ( function()
 			function hintPop()
 			{
 				let h = document.getElementById('help')
-				let f = document.getElementById("field2").value	
+				let f = document.getElementById("field2").value
+				
 				h.innerHTML=f							
-				if(f.value!="")
+				if(f!="")
 				{
 					 loadDoc(f).then(R1)
 				}
