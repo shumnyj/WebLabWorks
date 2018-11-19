@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.1//EN" "http://wwww.w3.org/TR/xhtml11.dtd">
+<html xmlns="http://wwww.w3.org/1999/xhtml">
+	<head>
+		<title>Hint test</title>
+		<link type="text/css" media="all" rel="stylesheet" href="styles.css" />
+		<script src="script.js">
+		
+		</script>
+	</head>
+	
+	<body>
+		<div id="container">
+			
+				<!--<input id = "field" type="text" onchange="hintPop()"/>
+				<ul id ="hint" >
+				</ul>-->
+				<div class="box">
+					<h3> List input</h3>
+					
+						<input id = "field1" type="text" onchange='hintModule.hintPush()'/>
+					
+					<ul id="lib">
+					</ul>
+				</div>
+				<div class="box">
+					<h3> Input with hint</h3>
+					<input id = "field2" type="text" onchange='hintModule.hintPop()'/>						
+					<div id = "help"></div>
+					<ul id ="hint" >
+					</ul>
+				</div>
+			
+		</div>
+	</body>
+</html> 

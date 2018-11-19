@@ -1,0 +1,70 @@
+html, body
+{
+	height: 100%;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.box
+{
+	width: 48%;
+	min-height: 160px;
+	float:left;
+	background-color: #80ffaa;
+	margin: 1%;
+}
+form
+{
+	margin: 3px;
+	width: 80%;	
+}
+h3
+{
+	padding: 5px;
+}
+input
+{
+	position: relative;
+	width: 30%;
+	height: 2em;	
+	margin: 5px;
+	padding: 3px;	
+	/*border: 1 px solid black;*/
+}
+
+#help
+{	
+	padding: 1px;
+	margin-left: 20px;
+	width: 20%;	
+}
+
+#lib
+{
+	/*visibility: hidden;*/
+	display: none;
+	list-style-type: none;
+}
+
+#hint
+{	
+	display: none;
+	min-width: 100px;
+	padding: 1px;
+	margin: 2 px;
+	position: absolute;
+	color: white;
+	background: grey;	
+	list-style-type: none;
+}
+#help:hover
+{
+	text-decoration: underline;
+}
+
+#help:hover+#hint
+{
+	display: block;
+}
+
